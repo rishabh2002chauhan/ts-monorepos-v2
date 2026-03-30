@@ -1,0 +1,8 @@
+{
+	"workspaces": {
+		"packages/*": {
+			"entry": ["src/{index, main}.ts"],
+			"project": "src/**/*.{ts, svelte}"
+		}
+	}
+}
