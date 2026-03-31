@@ -25,3 +25,9 @@ dist-ssr
 coverage
 **/tsconfig.build.json
 **/temp
+
+
+.nx/cache
+.nx/workspace-data
+vitest.config.*.timestamp*
+vite.config.*.timestamp*
