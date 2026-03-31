@@ -1,28 +1,31 @@
 {
-	"name": "seeds",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"build": "pnpm --color run -r build",
-		"lint": "pnpm --color run -r lint",
-		"test": "pnpm --color run -r test",
-		"dev": "pnpm --color run -r dev",
-		"format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
-		"check": "pnpm --color run -r check"
-	},
-	"volta": {
-		"node": "22.16.0"
-	},
-	"devDependencies": {
-		"@eslint/js": "^9.28.0",
-		"@manypkg/cli": "^0.25.1",
-		"@types/node": "^24.0.0",
-		"eslint": "^9.28.0",
-		"knip": "^6.1.0",
-		"prettier": "^3.5.3",
-		"prettier-plugin-svelte": "^3.4.0",
-		"syncpack": "14.0.0-alpha.41",
-		"typescript": "~5.8.3",
-		"typescript-eslint": "^8.34.0"
-	}
+  "name": "seeds",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "sh scripts/dev.sh",
+    "build": "pnpm --color run -r build",
+    "lint": "pnpm --color run -r lint",
+    "test": "pnpm --color run -r test",
+    "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
+    "check": "pnpm --color run -r check"
+  },
+  "volta": {
+    "node": "22.16.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@manypkg/cli": "^0.25.1",
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.28.0",
+    "knip": "^6.1.0",
+    "lerna": "^9.0.7",
+    "prettier": "^3.5.3",
+    "prettier-plugin-svelte": "^3.4.0",
+    "syncpack": "14.0.0-alpha.41",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.34.0"
+  },
+  "dependencies": {}
 }
