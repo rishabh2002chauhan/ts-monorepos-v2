@@ -1,36 +1,16 @@
 {
 	"$schema": "./node_modules/nx/schemas/nx-schema.json",
 	"targetDefaults": {
-		"test": {
-			"dependsOn": ["^test", "^build"],
-			"cache": true
-		},
-		"test:coverage": {
-			"outputs": ["{projectRoot}/coverage"],
-			"cache": true
-		},
-		"build": {
-			"outputs": ["{projectRoot}/dist"],
-			"cache": true
-		},
-		"lint": {
-			"cache": true
-		},
-		"check": {
-			"cache": true
-		},
-		"format": {
-			"cache": true
-		}
+		"test": { "dependsOn": ["^test", "^build"], "cache": true },
+		"test:coverage": { "outputs": ["{projectRoot}/coverage"], "cache": true },
+		"build": { "outputs": ["{projectRoot}/dist"], "cache": true },
+		"lint": { "cache": true },
+		"check": { "cache": true },
+		"format": { "cache": true }
 	},
 	"analytics": true,
 	"plugins": [
-		{
-			"plugin": "@nx/eslint/plugin",
-			"options": {
-				"targetName": "eslint:lint"
-			}
-		},
+		{ "plugin": "@nx/eslint/plugin", "options": { "targetName": "eslint:lint" } },
 		{
 			"plugin": "@nx/vitest",
 			"options": {
@@ -54,5 +34,5 @@
 			}
 		}
 	],
-	"nxCloudId": "69cbc816e426c00fffb31d8b"
+	"nxCloudId": "69cc10b1a60c532762771755"
 }
