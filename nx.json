@@ -2,7 +2,7 @@
 	"$schema": "./node_modules/nx/schemas/nx-schema.json",
 	"targetDefaults": {
 		"test": {
-			"dependsOn": ["^test"],
+			"dependsOn": ["^test", "^build"],
 			"cache": true
 		},
 		"test:coverage": {
